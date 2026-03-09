@@ -2,8 +2,11 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "backend",
   "main": "src/index.ts",
-  "compatibility_date": "2026-03-09"
-  // "compatibility_flags": [
+  "compatibility_date": "2026-03-09",
+  "assets": {
+    "directory": "../frontend/dist",
+    "binding": "ASSETS"
+  }
   //   "nodejs_compat"
   // ],
   // "vars": {
