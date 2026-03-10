@@ -21,7 +21,20 @@ function App() {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%' }}>
       <Header />
-      <Box component="main" sx={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', p: { xs: 2, md: 4 }, width: '100%', maxWidth: 900, mx: 'auto' }}>
+      <Box
+        component="main"
+        sx={{
+          flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          p: { xs: 2, md: 4 },
+          width: '100%',
+          maxWidth: 900,
+          mx: 'auto',
+        }}
+      >
         <Hero />
         <SearchForm url={url} setUrl={setUrl} onSubmit={handleGenerate} />
         {generated && <PreviewBanner />}

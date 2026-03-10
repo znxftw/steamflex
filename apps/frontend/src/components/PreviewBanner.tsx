@@ -3,44 +3,55 @@ import { Box } from '@mui/material';
 
 const PreviewBanner: React.FC = () => {
   return (
-    <Box component="section" sx={{ 
-      display: 'flex', 
-      justifyContent: 'center', 
-      my: 6,
-      opacity: 0,
-      transform: 'translateY(20px)',
-      animation: 'fadeIn 0.6s ease forwards',
-      '@keyframes fadeIn': {
-        to: {
-          opacity: 1,
-          transform: 'translateY(0)',
-        }
-      }
-    }}>
-      <Box sx={{ 
-        maxWidth: '100%', 
-        overflow: 'hidden',
-        background: '#171d25',
-        border: '1px solid rgba(255, 255, 255, 0.08)',
-        borderRadius: 4,
-        p: { xs: 2, md: 4 },
+    <Box
+      component="section"
+      sx={{
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
-        boxShadow: '0 12px 40px rgba(0, 0, 0, 0.3)',
-        position: 'relative',
-        '&::before': {
-          content: '""',
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          height: '1px',
-          background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent)',
-        }
-      }}>
+        my: 6,
+        opacity: 0,
+        transform: 'translateY(20px)',
+        animation: 'fadeIn 0.6s ease forwards',
+        '@keyframes fadeIn': {
+          to: {
+            opacity: 1,
+            transform: 'translateY(0)',
+          },
+        },
+      }}
+    >
+      <Box
+        sx={{
+          maxWidth: '100%',
+          overflow: 'hidden',
+          background: '#171d25',
+          border: '1px solid rgba(255, 255, 255, 0.08)',
+          borderRadius: 4,
+          p: { xs: 2, md: 4 },
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          boxShadow: '0 12px 40px rgba(0, 0, 0, 0.3)',
+          position: 'relative',
+          '&::before': {
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent)',
+          },
+        }}
+      >
         {/* Placeholder SVG */}
-        <svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" style={{ maxWidth: '100%', height: 'auto' }}>
+        <svg
+          width="600"
+          height="200"
+          viewBox="0 0 600 200"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ maxWidth: '100%', height: 'auto' }}
+        >
           <defs>
             <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#1b2838" />

@@ -32,7 +32,7 @@ const SearchForm: React.FC<SearchFormProps> = ({ url, setUrl, onSubmit }) => {
           '&:focus-within': {
             borderColor: 'rgba(0, 210, 255, 0.4)',
             boxShadow: '0 0 0 3px rgba(0, 210, 255, 0.4), 0 8px 32px rgba(0, 0, 0, 0.3)',
-          }
+          },
         }}
       >
         <TextField
@@ -53,17 +53,17 @@ const SearchForm: React.FC<SearchFormProps> = ({ url, setUrl, onSubmit }) => {
               '&::placeholder': {
                 color: 'rgba(161, 161, 170, 0.6)',
                 opacity: 1,
-              }
-            }
+              },
+            },
           }}
         />
         <Button
           type="submit"
           variant="contained"
           size="large"
-          sx={{ 
-            height: '56px', 
-            px: 4, 
+          sx={{
+            height: '56px',
+            px: 4,
             borderRadius: 3,
             background: 'linear-gradient(135deg, #3a8df5 0%, #00d2ff 100%)',
             color: '#fff',
@@ -74,11 +74,11 @@ const SearchForm: React.FC<SearchFormProps> = ({ url, setUrl, onSubmit }) => {
             '&:hover': {
               background: 'linear-gradient(135deg, #2b77d6 0%, #00b4db 100%)',
               transform: 'scale(1.02)',
-              boxShadow: 'none'
+              boxShadow: 'none',
             },
             '&:active': {
-              transform: 'scale(0.98)'
-            }
+              transform: 'scale(0.98)',
+            },
           }}
         >
           generate
