@@ -1,7 +1,14 @@
 import React from 'react';
+import { Box, Typography } from '@mui/material';
 
 const Footer: React.FC = () => {
-  return <footer className="footer">&copy; vishnu bhagyanath 2026. all rights reserved.</footer>;
+  return (
+    <Box component="footer" sx={{ py: 3, textAlign: 'center', mt: 'auto' }}>
+      <Typography variant="body2" color="text.secondary">
+        &copy; vishnu bhagyanath 2026. all rights reserved.
+      </Typography>
+    </Box>
+  );
 };
 
 export default Footer;

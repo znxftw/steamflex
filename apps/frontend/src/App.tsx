@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Box } from '@mui/material';
 import './index.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -18,15 +19,15 @@ function App() {
   };
 
   return (
-    <>
+    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%' }}>
       <Header />
-      <main className="main-content">
+      <Box component="main" sx={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', p: { xs: 2, md: 4 }, width: '100%', maxWidth: 900, mx: 'auto' }}>
         <Hero />
         <SearchForm url={url} setUrl={setUrl} onSubmit={handleGenerate} />
         {generated && <PreviewBanner />}
-      </main>
+      </Box>
       <Footer />
-    </>
+    </Box>
   );
 }
 
